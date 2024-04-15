@@ -23,7 +23,7 @@
 //Início da aula 15/4
 
 //Recebeu variáveis
-let nome = prompt("Digite seu nome")
+/*let nome = prompt("Digite seu nome")
 let idade = prompt("Digite sua idade")
 //MENSAGEM: Digite as horas que você trabalha por dia:
 let horasTrabalho = prompt("Digite as horas que você trabalha, porfavor.")
@@ -36,7 +36,7 @@ console.log(typeof salarioDia)
 let horasTrabNumber = Number(horasTrabalho)
 let salDiaNumber = Number(salarioDia)
 //Processando valores:
-let valHoraNumber = horasTrabNumber/salDiaNumber
+let valHoraNumber = salDiaNumber/horasTrabNumber
 //Conversão para não dar erro de NULL:
 let valorHora = String(valHoraNumber)
 const mensagem = "Seu valor hora é " + valorHora + "!!!"
@@ -46,3 +46,27 @@ console.log(typeof mensagem)
 console.log(mensagem)
 // Saída de valores para Front End
 alert(mensagem)
+*/
+
+//Exercício operadores aritméticos.
+/*
+let primeiroValor = 3
+let segundoValor = 4
+let Resultado = primeiroValor + segundoValor
+alert(Resultado)
+*/
+
+/*let primeiroValor = 3
+let segundoValor = 5
+let Resultado = (primeiroValor * segundoValor)/2
+alert(Resultado)
+*/
+
+/*let resultado
+resultado = (4-5)*-1
+alert(resultado)
+*/
+
+let resultado
+resultado = 234 % 5
+alert(resultado)
