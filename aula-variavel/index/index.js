@@ -60,7 +60,7 @@ alert(resultado)
 alert(resultado2)
 alert(resultado3)
 alert(resultado4)
-*/
+
 
 //Exercício 5:
 
@@ -73,7 +73,7 @@ let maiorIdade
 let idade2050
 
 
-//Recebendo valores:
+//2=Recebendo valores:
 
 nome = prompt("Qual seu nome?")
 anoAtual = prompt("Digite o ano atual!")
@@ -81,16 +81,18 @@ anoNascimento = prompt("Qual o seu ano de nascimento?")
 
 
 
-//Calcula valores
+//3=Calcula valores
 idade = anoAtual - anoNascimento
 maiorIdade = idade >= 18
 idade2050 = 2050 - anoNascimento
 
 
 
-//Mostra resultados na web:
+//4=Mostra resultados na web:
 alert(nome)
 alert(idade)
 alert(anoNascimento)
 alert(maiorIdade)
 alert(idade2050)
+*/
+
