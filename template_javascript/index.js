@@ -78,19 +78,25 @@ O primeiro numero é divisível pelo segundo? true
     ```
 
 
+//1- Declaração de variáveis:
 let numeroUm
 let numeroDois
 let numMaior
 let igual
+let divisível
 
+//2- Recebendo valores:
 numeroUm = Number(prompt("Digite número1"))
 numeroDois = Number(prompt("Digite número2"))
 
+//3- Calculando valores:
 numMaior = numeroUm > numeroDois
 igual = numeroUm == numeroDois
 
+//4- Resultado no console:
 console.log(numeroUm)
 console.log(numeroDois)
 console.log((numeroUm%numeroDois)==0)
 console.log((numeroDois%numeroUm)==0)
+
 */
