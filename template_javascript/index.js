@@ -72,22 +72,31 @@ alert(idadeDias)
 alert(idadeHoras)
 /*
 
+<<<<<<< HEAD
   
+=======
+//1- Declaração de variáveis:
+>>>>>>> 0c1d4a25871eda04c749efac3f0bd91d5b7a3a5c
 let numeroUm
 let numeroDois
 let numMaior
 let igual
+let divisível
 
+//2- Recebendo valores:
 numeroUm = Number(prompt("Digite número1"))
 numeroDois = Number(prompt("Digite número2"))
 
+//3- Calculando valores:
 numMaior = numeroUm > numeroDois
 igual = numeroUm == numeroDois
 
+//4- Resultado no console:
 console.log(numeroUm)
 console.log(numeroDois)
 console.log((numeroUm%numeroDois)==0)
 console.log((numeroDois%numeroUm)==0)
+<<<<<<< HEAD
 */
 
 //Inicio da aula:
@@ -178,3 +187,7 @@ console.log(números)
 
 
 
+=======
+
+*/
+>>>>>>> 0c1d4a25871eda04c749efac3f0bd91d5b7a3a5c
