@@ -167,13 +167,13 @@ console.log(numberDigit)*/
 //3. Remova os números 4 e 5
 //4. Determine o novo tamanho do array
 
-const números = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+/*const números = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 console.log(números.length) 
 números.push(7)
 números.splice(4,2)
 console.log(números.lenght)
-console.log(números)
+console.log(números)*/
 
 
 
