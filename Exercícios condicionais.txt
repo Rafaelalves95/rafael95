@@ -1,0 +1,35 @@
+1-
+
+a- Explique o que o código faz. Qual o teste que ele realiza? 
+Testa para verificar se o número 2 é igual a 0.
+
+b- Para que tipos de números ele imprime no console "Passou no teste"? 
+Números pares.
+
+c- Para que tipos de números a mensagem é "Não passou no teste"? 
+Números impares.
+
+2- 
+a- Para que serve o código acima?
+Para automatizar tarefas do supermercado.
+
+b- Qual será a mensagem impressa no console, se o valor de fruta for "Maçã"?
+O preço de 2.25
+
+c-
+Considere que um usuário queira comprar uma Pêra, qual seria
+a mensagem impressa no console se retirássemos o break que está logo
+acima do default (o break indicado pelo comentário "BREAK PARA O ITEM c.")?
+Nada, o preço continuaria 5.5!
+
+3- 
+a- Pedindo ao usuário para digitar o primeiro número, ou seja coletando informações de usuário.
+
+b- Se fosse 10, seria "Esse número passou no teste",
+se for -10 daria mensagem indefinida,
+mas se editarmos e usarmos o else, ficaria "Essa mensagem é secreta!!!"
+
+c- 
+Sim, o erro é que não foi criado o else!
+
+

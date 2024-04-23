@@ -125,7 +125,7 @@ switch (pokemon){
         console.log("Água")
         break
 }
-*/
+
 
 //Exercício 5:
 
@@ -142,11 +142,48 @@ else{
 }
 
 
+//Exercícios de escrita de Código:
+
+1-
+
+let idade
+
+idade = Number(prompt("Qual sua idade?"))
+
+let idadeUsuário
+if(idadeUsuário > 18){  
+    console.log("Você pode dirigir")
+
+} else {
+     console.log("Você não pode dirigir.")
+}
 
 
+//2:
 
+alert("Digite seu turno! M (matutino) ou V (Vespertino) ou N (Noturno)")
 
+const seuTurno = prompt("Digite seu turno!")
+if(seuTurno == "M"){
+    console.log("Bom Dia!")
+} else if(seuTurno == "V"){
+    console.log("Boa Tarde!")
+} else if(seuTurno == "N"){
+    console.log("Boa noite!")
+}
+*/
+alert("Digite seu turno! M (matutino) ou V (Vespertino) ou N (Noturno)")
 
+const seuTurno = prompt("Digite seu turno!")
 
-
-
+switch(seuTurno){
+    case 'M':
+        console.log("Bom dia!")
+        break
+    case 'V':
+        console.log("Bom Tarde!")
+        break
+    case 'N':
+        console.log("Boa noite!")
+        break
+}
