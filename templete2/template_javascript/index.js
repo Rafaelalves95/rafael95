@@ -41,7 +41,7 @@ listaComidas[1] = perguntaUsuario
 
 console.log(fraseComida)
 console.log(listaComidas[0] + "\n" + listaComidas[1] + "\n" + listaComidas[2] + "\n" + listaComidas[3] + "\n" + listaComidas[4] )
-*/
+
 
 const listaDetarefas = [] 
 
@@ -57,3 +57,25 @@ escolhaUmatarefa = prompt("Digite um índiuce de uma tarefa?")
 listaDetarefas.splice(escolhaUmatarefa,1)
 
 console.log(listaDetarefas)
+*/
+
+//Exercício 1: Condicionais.
+
+let num1
+let num2
+
+num1 = prompt("Digite um número!")
+num2 = prompt("Digite mais um número!")
+
+const iguais = num1 === num2
+const diferentes = num1 !== num2
+const maior = num1 > num2
+const menor = num1 <num2
+
+
+alert(num1)
+alert(num2)
+console.log(iguais)
+console.log(diferentes)
+console.log(maior)
+console.log(menor)
