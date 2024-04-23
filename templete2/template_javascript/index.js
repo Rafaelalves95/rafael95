@@ -58,7 +58,7 @@ listaDetarefas.splice(escolhaUmatarefa,1)
 
 console.log(listaDetarefas)
 
-*/
+
 //Exercício 1: Condicionais.
 
 let num1
@@ -72,15 +72,81 @@ num2 = prompt("Digite mais um número!")
 //const maior = num1 > num2
 //const menor = num1 < num2
 
+//Iguais:
 if (num1 == num2){
+    alert("Números iguais!")
     console.log("Sucesso!")
 } else {
     console.log("Fracasso!")
 }
 
+//Diferente:
 
-alert(num1)
-alert(num2)
+if (num1 !== num2){
+    alert("Números diferentes!")
+    console.log("Diferente")
+} else {
+    console.log("É igual")
+}
+
+//Maior:
+
+if (num1 > num2){
+    alert("Maior!")
+    console.log("Maior")
+} else {
+    console.log("Menor")
+}
+
+//Menor:
+
+if (num1 < num2){
+    alert("Menor!")
+    console.log("Menor")
+} else {
+    console.log("Maior")
+}
+
+//Finalizando exercício 1,2,3.
+
+//Exercício 4:
+
+
+const pokemon = prompt("Escolha dentre Bulbassauro, Charmander ou Squirtle, para saber seu tipo!")
+
+switch (pokemon){
+    case 'Bulbassauro':
+        console.log("Planta e Veneno")
+        break
+    case 'Charmander':
+        console.log("Fogo")
+        break
+    case 'Squirtle':
+        console.log("Água")
+        break
+}
+*/
+
+//Exercício 5:
+
+alert("Responda Sim ou Não!")
+const ensinoMedio = prompt("Você concluiu o ensino médio?")
+const maior18 = prompt("Você é maior de 18 anos?")
+const cursandoFac = prompt("Você está cursando outra faculdade?")
+
+if((ensinoMedio == "Sim") && (maior18 == "Sim") && (cursandoFac == "Não")) {
+console.log("Você está pronto para estudar na nossa faculdade!")
+}
+else{
+    console.log("Lamentamos, mas você não está apto!")
+}
+
+
+
+
+
+
+
 
 
 
