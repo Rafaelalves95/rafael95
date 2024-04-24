@@ -187,13 +187,35 @@ switch(seuTurno){
         console.log("Boa noite!")
         break
 }
-*/
-const generoFilme = prompt("Qual gênero do filme?")
-const preçoIngresso = Number(prompt("Qual o preço do ingresso?"))
 
-if((generoFilme == "Fantasia") && (preçoIngresso < "15")){
+let generoFilme
+let preçoIngresso
+
+generoFilme = prompt("Qual gênero do filme?")
+preçoIngresso = Number(prompt("Qual o preço do ingresso?"))
+generoFilme = generoFilme.toUpperCase()
+
+if((generoFilme == "FANTASIA") && (preçoIngresso < 15)){
     console.log("Bom filme!")
 }
 else {
     console.log("Escolha outro filme!")
 }
+*/
+//Exercício 1:
+// Declarando variáveis:
+let numeros = 0
+let soma = 0
+//Inicializa:
+numeros = Number(prompt("Digite alguns números!"))
+//Inicializa loop:
+while (numeros !== 0){
+    //Soma valores:
+    soma = soma + numeros
+    //Lê valores para somar:
+    numeros = Number(prompt("Digite alguns números!"))
+}
+console.log(soma)
+alert(soma)
+
+
