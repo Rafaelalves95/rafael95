@@ -171,7 +171,7 @@ if(seuTurno == "M"){
 } else if(seuTurno == "N"){
     console.log("Boa noite!")
 }
-*/
+
 alert("Digite seu turno! M (matutino) ou V (Vespertino) ou N (Noturno)")
 
 const seuTurno = prompt("Digite seu turno!")
@@ -186,4 +186,14 @@ switch(seuTurno){
     case 'N':
         console.log("Boa noite!")
         break
+}
+*/
+const generoFilme = prompt("Qual gênero do filme?")
+const preçoIngresso = Number(prompt("Qual o preço do ingresso?"))
+
+if((generoFilme == "Fantasia") && (preçoIngresso < "15")){
+    console.log("Bom filme!")
+}
+else {
+    console.log("Escolha outro filme!")
 }
