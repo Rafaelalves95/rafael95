@@ -201,21 +201,113 @@ if((generoFilme == "FANTASIA") && (preçoIngresso < 15)){
 else {
     console.log("Escolha outro filme!")
 }
-*/
+
 //Exercício 1:
 // Declarando variáveis:
 let numeros = 0
-let soma = 0
+let resultado = 0
 //Inicializa:
 numeros = Number(prompt("Digite alguns números!"))
 //Inicializa loop:
 while (numeros !== 0){
     //Soma valores:
-    soma = soma + numeros
+    resultado = resultado + numeros
     //Lê valores para somar:
     numeros = Number(prompt("Digite alguns números!"))
 }
-console.log(soma)
-alert(soma)
+console.log(resultado)
+alert(resultado)
+
+//Exercício 2:
+
+let array = [11, 15, 18, 14, 12, 13]
+let maiorValor = 0
+
+for(let i = 0 ; i <= 6 ; i++){
+    if (array[i] > maiorValor){
+        maiorValor = array[i]
+    }
+
+}
+alert(maiorValor)
+console.log(maiorValor)
+
+//Exerccício 3: Aula laço:
+
+const array = ["Oi", "sumido(a)", "tudo", "bem?", "Saudades"]
+let frase = ""
+for(let i of  array){
+    frase = frase + i + " "
+}
+console.log(frase)
+
+Exercício 1: Laços.
+/*
+let quantidade = Number(prompt("Quantos bichinhos de estimação você tem?"))
+let nomePet = []
+
+if (quantidade === 0){
+    console.log( "Que pena! Você pode adotar um pet!")
+} 
+else if (quantidade > 0){
+    for (let i = 0; i < quantidade; i++){
+        let nome = prompt("Digite o nome dos seus pet's!")
+        nomePet.push(nome)
+        //quantidadeMaior = quantidadeMaior + i +" "
+    }
+}
+for (let i = 0; i < quantidade; i++){
+    console.log(nomePet[i])
+}
+
+*/
+//Exercício 2:
+
+
+//a) Escreva um programa que imprime cada um dos valores do array original.
+
+
+let arrayOriginal = [1, 2, 3, 4]
+numeroArray = arrayOriginal.length
+for(let i = 0; i < numeroArray; i++){
+    alert(arrayOriginal[i])
+}
+let number = 0
+for(let i = 0; i < numeroArray; i++){
+    number = arrayOriginal[i]/10
+    alert(number)
+}
+
+let novoArray = []
+for(let i = 0; i < numeroArray; i++){
+    number = arrayOriginal[i]%2
+    if (number == 0){
+        alert(arrayOriginal[i])
+    }
+}
+
+
+/*
+b) Escreva um programa que imprime cada um dos valores do array original divididos por 10
+
+c) Escreva um programa que crie um novo array contendo, somente, 
+os números pares do array original e imprima esse novo array
+const novoArray = []
+
+d) Escreva um programa que crie um novo array contendo strings,
+ da seguinte forma: "O elemento do índex i é: numero". Depois, imprima este novo array.
+for(let i = numero)
+let numero
+
+e) Escreva um programa que imprima no console o maior e o menor números contidos no array original
+(let i = 0 ; i <= 6 ; i++){
+    if (array[i] > maiorValor){
+        maiorValor = array[i]
+    }
+
+    */
+
+
+
 
 
