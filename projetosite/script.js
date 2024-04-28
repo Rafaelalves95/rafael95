@@ -11,6 +11,7 @@ Escolha uma opção:
 
 //cadastroDoador
 
+
 const name = prompt("Qual seu nome?")
 const yearsOld = Number(prompt("Qual sua idade?"))
 const kg = prompt("Qual o seu peso?")
@@ -30,6 +31,7 @@ console.log(dadosDoador)
 
 
 
+
 /*
 const cachorro = {
 	nome: "Juca", 
@@ -44,7 +46,7 @@ const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
 console.log(cachorro)
 console.log(gato)
 console.log(tartaruga)
-/*
+
 console.log("------------------------")
 console.log("Listagem de Doadores:")
 console.log("----------------------------------------------------------------")
