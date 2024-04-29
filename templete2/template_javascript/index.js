@@ -260,7 +260,7 @@ for (let i = 0; i < quantidade; i++){
     console.log(nomePet[i])
 }
 
-*/
+
 //Exercício 2:
 
 
@@ -287,7 +287,12 @@ for(let i = 0; i < numeroArray; i++){
 }
 
 
-/*
+let arrayNovo = [20, 40, 50, 77]
+const valores = arrayNovo[4]
+console.log(arrayNovo)
+
+
+
 b) Escreva um programa que imprime cada um dos valores do array original divididos por 10
 
 c) Escreva um programa que crie um novo array contendo, somente, 
@@ -300,12 +305,75 @@ for(let i = numero)
 let numero
 
 e) Escreva um programa que imprima no console o maior e o menor números contidos no array original
-(let i = 0 ; i <= 6 ; i++){
-    if (array[i] > maiorValor){
-        maiorValor = array[i]
+
+
+
+let arrayNovo = [20, 40, 50, 77]
+const valores = arrayNovo[4]
+console.log(arrayNovo)
+    
+    function encontrarMaiorMenor(arrayNovo) {
+        if (array.length === 0) {
+            return [null, null];
+        }
+        
+        let maior = menor = arrayNovo[0];
+        
+        for (let i = 1; i < arrayNovo.length; i++) {
+            if (array[i] > maior) {
+                maior = arrayNovo[i];
+            } else if (arrayNovo[i] < menor) {
+                menor = arrayNovo[i];
+            }
+        }
+        
+        return [maior, menor];
     }
 
-    */
+
+//Exercício 1:
+
+function imprimirOlaMundo(){
+    console.log("Olá Mundo!")
+}
+imprimirOlaMundo()
+
+
+//Exercício 2:
+
+function imprimeNome (nome){
+    console.log(`Olá ${nome}`)
+    }
+let nomeUser
+let nomePai
+let nomeMae
+
+nomeUser = prompt("Digite seu nome!")
+imprimeNome(nomeUser)
+
+nomePai= prompt("Digite o nome do seu pai!")
+imprimeNome(nomePai)
+
+nomeMae = prompt("Digite o nome da sua mãe!")
+imprimeNome(nomeMae)
+*/
+
+//Exercício 3:
+
+
+
+function somaUm(num1, num2){
+    let soma = num1 + num2 
+    return soma
+}
+let numero1 = Number(prompt("Digite um número!"))
+let numero2 = Number(prompt("Digite outro número!"))
+
+resultado = somaUm(numero1,numero2)
+alert(resultado)
+console.log(resultado)
+
+
 
 
 

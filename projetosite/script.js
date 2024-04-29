@@ -46,11 +46,4 @@ const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
 console.log(cachorro)
 console.log(gato)
 console.log(tartaruga)
-
-console.log("------------------------")
-console.log("Listagem de Doadores:")
-console.log("----------------------------------------------------------------")
-console.log("Nome" | "Idade" | "Peso" | "Tipo Sanguineo" + "última Doação" )
-console.log("----------------------------------------------------------------")
 */
-
