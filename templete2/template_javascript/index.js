@@ -356,7 +356,7 @@ imprimeNome(nomePai)
 
 nomeMae = prompt("Digite o nome da sua mãe!")
 imprimeNome(nomeMae)
-*/
+
 
 //Exercício 3:
 
@@ -374,8 +374,78 @@ alert(resultado)
 console.log(resultado)
 
 
+//Exercício 4:
+function trataArray(input){
+    let array = []
+
+    array.push((input[0]/2))
+    array.push((input[(input.length-1)]/2))
+    return array
+}
+let array = [2,3,4,5,6,7,8]
+let novoArray = []
+novoArray = trataArray(array)
+alert(novoArray)
 
 
+function frase(){
+    let nome = ("Rafael")
+    let idade = ("29")
+    let ondeMora = ("São Leopoldo")
+    let profissao = ("Estudante")
+    console.log(`Eu sou ${nome}, e tenho ${idade} anos, moro em ${ondeMora}, e sou ${profissao}.`)
+}
+frase()
+
+function recebendoValores(nome,idade,ondeMora,profissao){
+    return frase ="Eu sou" + nome + " e tenho " + idade + "anos, e moro em" + ondeMora + ", e sou" + profissao + "."
+   
+ }
+ let nome = prompt("Digite seu nome!")
+ let idade = prompt("Digite sua idade!")
+ let ondeMora = prompt("Onde você mora?")
+ let profissao = prompt("Qual sua profissao")
+ const mensagem = recebendoValores(nome,idade,ondeMora,profissao)
+ console.log(mensagem)
 
 
+function numbers(num1,num2){
+    return soma = num1 + num2
 
+}
+let resultado = numbers(1,1)
+console.log(resultado)
+numbers()
+
+function twoNumbers(numberOne,numberTwo){
+    if(numberOne >= numberTwo){
+        return true
+    }else {
+        return false
+
+    }
+    
+}
+const result= twoNumbers(1,1)
+console.log(result)
+
+function twoNumbers(numberOne){
+    if(numberOne%2==0){
+        return true
+
+    }else {
+        return false
+
+    }
+    
+}
+const result= twoNumbers(10)
+console.log(result)
+*/
+function trocaArray(mensagem){
+    let tamArray = mensagem.length
+    let novoArray = mensagem.toUpperCase()
+    alert(`${tamArray}   ${novoArray}`)
+}
+let mensagem = prompt("Digite uma mensagem!")
+trocaArray(mensagem)
