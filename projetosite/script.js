@@ -33,6 +33,24 @@ console.log(dadosDoador)
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 57c8fffc67804f1306a81ee4b5c321e47719b1d2
 /*
 const cachorro = {
 	nome: "Juca", 
@@ -47,11 +65,4 @@ const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
 console.log(cachorro)
 console.log(gato)
 console.log(tartaruga)
-
-console.log("------------------------")
-console.log("Listagem de Doadores:")
-console.log("----------------------------------------------------------------")
-console.log("Nome" | "Idade" | "Peso" | "Tipo Sanguineo" + "última Doação" )
-console.log("----------------------------------------------------------------")
 */
-

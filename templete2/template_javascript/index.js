@@ -260,7 +260,7 @@ for (let i = 0; i < quantidade; i++){
     console.log(nomePet[i])
 }
 
-*/
+
 //Exercício 2:
 
 
@@ -287,7 +287,12 @@ for(let i = 0; i < numeroArray; i++){
 }
 
 
-/*
+let arrayNovo = [20, 40, 50, 77]
+const valores = arrayNovo[4]
+console.log(arrayNovo)
+
+
+
 b) Escreva um programa que imprime cada um dos valores do array original divididos por 10
 
 c) Escreva um programa que crie um novo array contendo, somente, 
@@ -300,11 +305,32 @@ for(let i = numero)
 let numero
 
 e) Escreva um programa que imprima no console o maior e o menor números contidos no array original
-(let i = 0 ; i <= 6 ; i++){
-    if (array[i] > maiorValor){
-        maiorValor = array[i]
+
+
+
+let arrayNovo = [20, 40, 50, 77]
+const valores = arrayNovo[4]
+console.log(arrayNovo)
+    
+    function encontrarMaiorMenor(arrayNovo) {
+        if (array.length === 0) {
+            return [null, null];
+        }
+        
+        let maior = menor = arrayNovo[0];
+        
+        for (let i = 1; i < arrayNovo.length; i++) {
+            if (array[i] > maior) {
+                maior = arrayNovo[i];
+            } else if (arrayNovo[i] < menor) {
+                menor = arrayNovo[i];
+            }
+        }
+        
+        return [maior, menor];
     }
 
+<<<<<<< HEAD
     
     //1) Copie, cole e execute o seguinte código chamado ORDENAÇÃO POR FORÇA BRUTA:
 
@@ -368,5 +394,124 @@ let fim = performance.now()
 console.log("A ordenação foi executava em: ",(fim-inicio)," ms")
 console.log(arrayNumerico)
 */
+=======
+
+//Exercício 1:
+
+function imprimirOlaMundo(){
+    console.log("Olá Mundo!")
+}
+imprimirOlaMundo()
 
 
+//Exercício 2:
+
+function imprimeNome (nome){
+    console.log(`Olá ${nome}`)
+    }
+let nomeUser
+let nomePai
+let nomeMae
+
+nomeUser = prompt("Digite seu nome!")
+imprimeNome(nomeUser)
+
+nomePai= prompt("Digite o nome do seu pai!")
+imprimeNome(nomePai)
+
+nomeMae = prompt("Digite o nome da sua mãe!")
+imprimeNome(nomeMae)
+
+
+//Exercício 3:
+
+
+
+function somaUm(num1, num2){
+    let soma = num1 + num2 
+    return soma
+}
+let numero1 = Number(prompt("Digite um número!"))
+let numero2 = Number(prompt("Digite outro número!"))
+
+resultado = somaUm(numero1,numero2)
+alert(resultado)
+console.log(resultado)
+>>>>>>> 57c8fffc67804f1306a81ee4b5c321e47719b1d2
+
+
+//Exercício 4:
+function trataArray(input){
+    let array = []
+
+    array.push((input[0]/2))
+    array.push((input[(input.length-1)]/2))
+    return array
+}
+let array = [2,3,4,5,6,7,8]
+let novoArray = []
+novoArray = trataArray(array)
+alert(novoArray)
+
+
+function frase(){
+    let nome = ("Rafael")
+    let idade = ("29")
+    let ondeMora = ("São Leopoldo")
+    let profissao = ("Estudante")
+    console.log(`Eu sou ${nome}, e tenho ${idade} anos, moro em ${ondeMora}, e sou ${profissao}.`)
+}
+frase()
+
+function recebendoValores(nome,idade,ondeMora,profissao){
+    return frase ="Eu sou" + nome + " e tenho " + idade + "anos, e moro em" + ondeMora + ", e sou" + profissao + "."
+   
+ }
+ let nome = prompt("Digite seu nome!")
+ let idade = prompt("Digite sua idade!")
+ let ondeMora = prompt("Onde você mora?")
+ let profissao = prompt("Qual sua profissao")
+ const mensagem = recebendoValores(nome,idade,ondeMora,profissao)
+ console.log(mensagem)
+
+
+function numbers(num1,num2){
+    return soma = num1 + num2
+
+}
+let resultado = numbers(1,1)
+console.log(resultado)
+numbers()
+
+function twoNumbers(numberOne,numberTwo){
+    if(numberOne >= numberTwo){
+        return true
+    }else {
+        return false
+
+    }
+    
+}
+const result= twoNumbers(1,1)
+console.log(result)
+
+function twoNumbers(numberOne){
+    if(numberOne%2==0){
+        return true
+
+    }else {
+        return false
+
+    }
+    
+}
+const result= twoNumbers(10)
+console.log(result)
+*/
+function trocaArray(mensagem){
+    let tamArray = mensagem.length
+    let novoArray = mensagem.toUpperCase()
+    alert(`${tamArray}   ${novoArray}`)
+}
+let mensagem = prompt("Digite uma mensagem!")
+trocaArray(mensagem)
