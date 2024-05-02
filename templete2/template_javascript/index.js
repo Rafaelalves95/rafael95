@@ -337,7 +337,7 @@ e) Escreva um programa que imprima no console o maior e o menor números contido
     console.log("A ordenação foi executava em: ",(fim-inicio)," ms")
     console.log(arrayNumerico)
 
-*/
+
     //Declaração de Variáveis (Boas Práticas)
 let arrayNumerico = []
 let tamanhoArray = 0
@@ -367,6 +367,6 @@ let fim = performance.now()
 //Escreve array ordenado no console e tempo de execução
 console.log("A ordenação foi executava em: ",(fim-inicio)," ms")
 console.log(arrayNumerico)
-
+*/
 
 
