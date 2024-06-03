@@ -441,7 +441,7 @@ function twoNumbers(numberOne){
 }
 const result= twoNumbers(10)
 console.log(result)
-*/
+
 function trocaArray(mensagem){
     let tamArray = mensagem.length
     let novoArray = mensagem.toUpperCase()
@@ -449,3 +449,58 @@ function trocaArray(mensagem){
 }
 let mensagem = prompt("Digite uma mensagem!")
 trocaArray(mensagem)
+
+*/
+/*
+const professor = {
+    nome: "Vitor",
+    idade: 27,
+    email: 'vitor@gmail.com'
+   }
+   console.log(professor["nome"]) 
+
+const filme = {
+    diretores: "Chris Columbus, Alfonso Cuarón, Mike Newell e David Yates",
+    nome: "HarryPotter",
+    anoLançamento: 2009,
+    listaElenco: "Daniel Radcliffe como Harry Potter, Rupert Grint como Ron Weasley, Emma Watson como Hermione Granger, Robbie Coltrane como Rúbeo Hagrid, Alan Rickman como Severo Snape, Maggie Smith como Minerva McGonagall, Tom Felton como Draco Malfoy, Helena Bonham Carter como Bellatrix Lestrange, Ralph Fiennes como Lord Voldemort",
+    visto: "Sim!",
+   }
+filme.diretores = "Chris Columbus",
+filme.nome = "HarryPotter",
+filme.anoLançamento = 2009,
+filme.listaElenco = "Daniel Radcliffe como Harry Potter"
+filme.visto = "Sim!"
+filme.nomePersonagens = "Harry Potter, Hermione Granger, Ronald Weasley"
+
+filme.Listaelenco[0] = "Xuxa"
+
+let mensagem = ""
+for(let i = 0; i <=2; i++){
+    mensagem = mensagem + filme.Listaelenco[i] + "-" + filme.nomePersonagens[i] + "\n"
+
+}
+console.log(mensagem)
+
+
+console.log(filme.diretores)
+console.log(filme.nome)
+console.log(filme.anoLançamento)
+console.log(filme["listaElenco"])
+console.log(filme["visto"])
+
+
+
+
+
+
+const pessoa = {
+    nome: "Vitor",
+    idade: 27,
+    generoMusical: "Rock",
+   }
+
+   frase = "O nome da pessoa é " + pessoa.nome +  " ela tem " + pessoa.idade + " anos e gosta muito de " + pessoa.generoMusical
+   console.log(frase) 
+
+*/
