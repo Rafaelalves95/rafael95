@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Doadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Doadores</h1>
+        <ul>
+            <li><button onclick="cadastrarDoador()">1. Cadastrar doador</button></li>
+            <li><button onclick="listarDoadores()">2. Listar doadores</button></li>
+            <li><button onclick="buscarPorTipoSanguineo()">3. Buscar doador por tipo sanguíneo</button></li>
+            <li><button onclick="buscarPorDataUltimaDoacao()">4. Buscar doador por data da última doação</button></li>
+            <li><button onclick="sair()">5. Sair</button></li>
+        </ul>
+    </div>
+
+    <script>
+        function cadastrarDoador() {
+            alert("Opção 1 selecionada: Cadastrar doador");
+            // Adicione o código para cadastrar o doador aqui
+        }
+
+        function listarDoadores() {
+            alert("Opção 2 selecionada: Listar doadores");
+            // Adicione o código para listar os doadores aqui
+        }
+
+        function buscarPorTipoSanguineo() {
+            alert("Opção 3 selecionada: Buscar doador por tipo sanguíneo");
+            // Adicione o código para buscar doador por tipo sanguíneo aqui
+        }
+
+        function buscarPorDataUltimaDoacao() {
+            alert("Opção 4 selecionada: Buscar doador por data da última doação");
+            // Adicione o código para buscar doador por data da última doação aqui
+        }
+
+        function Voltar() {
+            alert("Opção 5 selecionada: Sair");
+            // Adicione o código para sair do sistema aqui
+        }
+    </script>
+</body>
+</html>

@@ -33,6 +33,8 @@ console.log(dadosDoador)
 
 
 
+<<<<<<< HEAD
+=======
 
 
 
@@ -48,6 +50,7 @@ console.log(dadosDoador)
 
 
 
+>>>>>>> 57c8fffc67804f1306a81ee4b5c321e47719b1d2
 /*
 const cachorro = {
 	nome: "Juca", 
