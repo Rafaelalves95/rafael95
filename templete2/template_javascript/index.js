@@ -330,7 +330,7 @@ console.log(arrayNovo)
         return [maior, menor];
     }
 
-<<<<<<< HEAD
+
     
     //1) Copie, cole e execute o seguinte código chamado ORDENAÇÃO POR FORÇA BRUTA:
 
@@ -393,8 +393,8 @@ let fim = performance.now()
 //Escreve array ordenado no console e tempo de execução
 console.log("A ordenação foi executava em: ",(fim-inicio)," ms")
 console.log(arrayNumerico)
-*/
-=======
+
+
 
 //Exercício 1:
 
