@@ -10,6 +10,7 @@ function exibirMenu() {
                  "Escolha uma opção:";
     return prompt(menu);
 }
+
 // Menu de exeibição pronto! 
 
 function painelSistema() {
@@ -24,21 +25,43 @@ function painelSistema() {
                 const kg = prompt("Qual o seu peso?")
                 const typeBlood = prompt("Qual seu tipo sanguíneo?")
                 const lastDonation = prompt("Qual a data (dd/mm/aaaa) da sua última doação?")
-                const doadores = [name, yearsOld, kg, typeBlood, lastDonation]
-                doadores.push()
-                alert("Cadastro concluído com Sucesso!")
+                const doadores = []
                 
+                const novaLista = {
+                    name: name,
+                    age: yearsOld,
+                    weight: kg,
+                    bloodType: typeBlood,
+                    lastDonationDate: lastDonation
+                };
+
+                doadores.push(novaLista);
+                alert("Cadastro concluído com Sucesso!")
                 break;
- //Cadastro de doador pronto! 
+ 
+                //Cadastro de doador pronto! 
+            
             case 2:
-                alert("Lista de doadores!")
+                alert("Lista de doadores!");
+                    if (doadores.length === 0) {
+                        alert("Nenhum doador cadastrado ainda.");
+                    } else {
+                    // Loop through the array and display each donor
+                        for (let i = 0; i < doadores.length; i++) {
+                            const currentDoador = doadores[i];
+                            alert(`Nome: ${currentDoador.name}\nIdade: ${currentDoador.age}\nPeso: ${currentDoador.weight}\nTipo Sanguíneo: ${currentDoador.bloodType}\nÚltima Doação: ${currentDoador.lastDonationDate}`);
+                        }
+                    }
                 /*const doadores = [name, yearsOld, kg, typeBlood, lastDonation]
-                    doadores.push()*/
+                    doadores.push()
+                    const doadores = [name, yearsOld, kg, typeBlood, lastDonation]
+                    const array = [0, 1, 2, 3, 4]
+                    console.log(array.length, array.push, array.toUpperCase())
                     const mensagem = "===== Listagem de doadores =====\n" +
-                    "Nome:" + name + "|" + "idade:" + yearsOld + "|" + "Peso:" + "|" + kg + "|" + "Tipo Sanguíneo:" + typeBlood + "|" + "Data da Última doação:" + lastDonation
-                    console.log(mensagem)
-  
+                "| Nome: |" + name + "| idade: |" + yearsOld +  "| Peso: |" + kg + "| Tipo Sanguíneo: |" + typeBlood  + "| Data da Última doação: " + lastDonation*/
                 break;
+  
+
             case 3:
                 alert("Buscar doador por tipo sanguíneo");
                 break;
@@ -74,20 +97,3 @@ painelSistema();
 
 
 
-
-
-/*
-const cachorro = {
-	nome: "Juca", 
-	idade: 3, 
-	raca: "SRD"
-}
-
-const gato = {...cachorro, nome: "Juba"}
-
-const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
-
-console.log(cachorro)
-console.log(gato)
-console.log(tartaruga)
-*/
