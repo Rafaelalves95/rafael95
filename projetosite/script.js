@@ -1,4 +1,5 @@
 //Painel de exibição:
+let doadores = []
 
 function exibirMenu() {
     const menu = "===== SISTEMA DE CADASTRO DE DOADORES DE SANGUE =====\n" +
@@ -19,26 +20,18 @@ function painelSistema() {
         opcao = exibirMenu();
         switch (parseInt(opcao)) {
             case 1:
+                //Chama prompts para salvar infos
                 alert("Cadastrar doador");
                 const name = prompt("Qual seu nome?")
                 const yearsOld = Number(prompt("Qual sua idade?"))
-                const kg = prompt("Qual o seu peso?")
-                const typeBlood = prompt("Qual seu tipo sanguíneo?")
+                const kg = Number(prompt("Qual o seu peso?"))
+                const bloodType = prompt("Qual seu tipo sanguíneo?").toUpperCase()
                 const lastDonation = prompt("Qual a data (dd/mm/aaaa) da sua última doação?")
-                const doadores = []
-                
-                const novaLista = {
-                    name: name,
-                    age: yearsOld,
-                    weight: kg,
-                    bloodType: typeBlood,
-                    lastDonationDate: lastDonation
-                };
-
-                doadores.push(novaLista);
+                //Faz push dos dados dos doadores
+                doadores.push({name,yearsOld,kg,bloodType,lastDonation})
+                //Mostra mensagem de cadastro concluído
                 alert("Cadastro concluído com Sucesso!")
                 break;
- 
                 //Cadastro de doador pronto! 
             
             case 2:
@@ -49,23 +42,18 @@ function painelSistema() {
                     // Loop through the array and display each donor
                         for (let i = 0; i < doadores.length; i++) {
                             const currentDoador = doadores[i];
-                            alert(`Nome: ${currentDoador.name}\nIdade: ${currentDoador.age}\nPeso: ${currentDoador.weight}\nTipo Sanguíneo: ${currentDoador.bloodType}\nÚltima Doação: ${currentDoador.lastDonationDate}`);
+                            alert(`Doador ${i+1} de ${doadores.length}\nNome: ${currentDoador.name}\nIdade: ${currentDoador.yearsOld}\nPeso: ${currentDoador.kg}\nTipo Sanguíneo: ${currentDoador.bloodType}\nÚltima Doação: ${currentDoador.lastDonation}`);
                         }
                     }
-                /*const doadores = [name, yearsOld, kg, typeBlood, lastDonation]
-                    doadores.push()
-                    const doadores = [name, yearsOld, kg, typeBlood, lastDonation]
-                    const array = [0, 1, 2, 3, 4]
-                    console.log(array.length, array.push, array.toUpperCase())
-                    const mensagem = "===== Listagem de doadores =====\n" +
-                "| Nome: |" + name + "| idade: |" + yearsOld +  "| Peso: |" + kg + "| Tipo Sanguíneo: |" + typeBlood  + "| Data da Última doação: " + lastDonation*/
+                
                 break;
   
-
             case 3:
+                searchTypeblood();
                 alert("Buscar doador por tipo sanguíneo");
                 break;
             case 4:
+                searchFordate();
                 alert("Buscar doador por data da última doação");
                 break;
             case 5:
@@ -76,6 +64,29 @@ function painelSistema() {
         }
     } while (opcao !== '5');
 }
+function searchTypeblood(){
+    if (doadores.lenght === 0){
+        alert("Não existe doadores com este tipo sanguíneo!")
+    }else{
+        const buscaTiposangue = prompt("Digite o tipo sanguíneo!").toUpperCase()
+        
+        let message = ``
+    
+        for (let doador of doadores){
+            if (doador.bloodType.includes(buscaTiposangue)){
+            message += `\n Doador: ${doador.name}\n Nome: ${doador.yearsOld}\n Idade: ${doador.kg}\n Peso: ${doador.bloodType}\n Tipo Sanguíneo: ${doador.lastDonation}\n Última doação: \n`;
+            }
+        }
+alert (message);
+    }
+}
+function searchFordate(){
+    if(doadores.length === 0){
+        alert("Não existe doadores nessa data!")
+    }
+
+}
+
 
 // Iniciando o sistema
 painelSistema();
