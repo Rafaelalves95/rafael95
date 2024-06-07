@@ -26,7 +26,7 @@ function painelSistema() {
                 const adress = prompt("Digite o endereço do Abrigo!")
                 const telephone = prompt("Digite o telefone para contato do Abrigo!")
                 const ability = prompt("Digite a capacidade do seu Abrigo!")
-                const city = prompt("Digite a Cidade do Seu abrigo!")
+                const city = prompt("Digite a Cidade do Seu abrigo!").toLowerCase()
                 //Faz push dos dados dos Abrigos
                 //Com o comando .push salvamos os dados digitados pelo usuário:
                 abrigos.push({name,adress,telephone,ability,city})
@@ -58,7 +58,7 @@ function painelSistema() {
             case 3:
                 //Chama a função criada para buscar um Abrigo na sua cidade:
                 searchCity();
-                    alert("Digite sua cidade para localizar Abrigo!");
+                    alert("Volte ao menu!");
                     //Exibi a mensagem ao final da busca:
                     alert("Busca concluída!");
                 break;
@@ -82,7 +82,7 @@ function searchCity(){
             alert("Não Abrigos nessa cidade!")
             }else{
             //Abre o prompt para o usuário digitar a cidade que deseja buscar abrigo, detalhe é que o toLowerCase deixa todas letras minúsculas:
-            const searchforCity = prompt("Digite a cidade que deseja buscar Abrigo!").toLowerCase
+            const searchforCity = prompt("Digite a cidade que deseja buscar Abrigo!").toLowerCase()
     
             //Criando uma variável vazia chamada message:
             let message = ``
@@ -97,8 +97,8 @@ function searchCity(){
             }
     //Exibição de dados dos doadores que foram buscados pelo tipo sangíneo:
     alert (message);
-        }
     }
+}
 // Iniciando o sistem
 painelSistema();
 
